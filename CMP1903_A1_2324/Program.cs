@@ -16,13 +16,13 @@ namespace CMP1903_A1_2324
              */
 
 
-            Game play = new Game();
+            Game play = new Game();  //creates a game object
 
-            play.game_start();
+            play.game_start();  //runs the method to start teh game in the game class
 
-            Testing test = new Testing();
+            Testing test = new Testing();   //creates a testing object
 
-            test.test();
+            test.test();   //runts the test method in the test object
 
 
 

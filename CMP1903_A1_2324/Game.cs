@@ -18,22 +18,26 @@ namespace CMP1903_A1_2324
 
         //Methods
 
-        //creates 3 private variables for use ro store the items we roll
-        int value1;
+        //creates 3 variables for use to store the items we roll
+        int value1;     
         int value2;
         int value3; 
 
-        Die die1 = new Die();
+        //creates 3 die objects that can be rolled to individual numbers between 1 and 6
+        Die die1 = new Die();    
         Die die2 = new Die();
         Die die3 = new Die();
         
+        //the method that when called rolls the dice objects and assigns them to the variables i declared earlier
         public void game_start()
         {
             value1 = die1.roll();
             value2 = die2.roll();
             value3 = die3.roll();        
+            //adds the rolled numbers together then prints it with the rolled numbers
             int roll_total = value1 + value2 + value3;
             Console.WriteLine("the numbers you have rolled are " + value1 + ", " + value2 + " and " + value3 + " which comes to a total of " + roll_total);
+            return roll_total;
         }
 
 

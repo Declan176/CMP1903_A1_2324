@@ -18,19 +18,23 @@ namespace CMP1903_A1_2324
          */
 
         //Method
-
+        //creates 2 objects to test the game and the dice
         Game test_game = new Game();
 
-        Die test_die = new Die();
+        Die test_die = new Die();  
         
 
         public void test()
         {
-            for (int i = 0; i < 50; i++);
+            for (int i = 0; i < 50; i++);     //runs it 50 times to ensure that it is always correct
             {
-                int test_value1 = test_die.roll();
+                int test_value1 = test_die.roll();     //assigning a variable to the rolled dice to see if it passes the debug checks
 
-                Debug.Assert(test_value1 < 7 && test_value1 > 1);
+                Debug.Assert(test_value1 < 7 && test_value1 > 0);
+
+                int test_value2 = test_game.game_start();  //assigning a variable to the sum of hte rolled dice to see if it passes the checks
+
+                Debug.Assert(test_value2 < 19 && test_value2 > 2);
             }
 
         }
